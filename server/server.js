@@ -24,5 +24,21 @@ io.on("connection", socket => {
     socket.on('disconnect', () => {
         socket.broadcast.emit('user-disconnected', users[socket.id]);
         delete users[socket.id];
-    })
+    });
+
+    
+    const mailOptions = {
+        from: 'yassirarsala@gmail.com',
+        to: 'yassirarsala@gmail.com', // Recipient's email address
+        subject: 'User Joined Chat',
+        text: `${username} has joined the chat at ${moment().format('YYYY-MM-DD HH:mm:ss')}`,
+    };
+    
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error('Error sending email:', error);
+        } else {
+            console.log('Email sent:', info.response);
+        }
+    });
 })

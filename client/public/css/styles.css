@@ -1,0 +1,122 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the login form */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#username {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+#login-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Style the chat container */
+.chat-container {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Style the chat messages */
+.chat {
+    padding: 10px;
+    background-color: #f2f2f2;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    clear: both;
+    word-wrap: break-word;
+}
+
+.received {
+    background-color: #e6e6e6;
+    float: left;
+}
+
+.sent {
+    background-color: #4CAF50;
+    color: #fff;
+    float: right;
+}
+
+/* Style the input field and send button */
+.input-container-msg, .input-container-room,.submit-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#user-message,#room-name {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+#send-button,#join-button, #submit-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.submit-container {
+    display: flex;
+    justify-content: center;
+}
+/* Style the connected users list */
+.connected-users {
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.connected-users h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#users-list {
+    list-style: none;
+    padding: 0;
+}
+
+#users-list li {
+    margin-bottom: 5px;
+}

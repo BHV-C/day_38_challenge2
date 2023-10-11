@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <script defer src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+    <script defer src="../../script.js"></script>
+    <title>Chat app</title>
+</head>
+
+<body>
+    <!-- <form action="Get"> -->
+        <div class="chat-container">
+            <div class="chat">
+                <div class="message received">
+                    <p>Hello there!</p>
+                </div>
+                <div class="message sent">
+                    <p>Hi! How can I help you?</p>
+                </div>
+                <!-- More messages can be added here -->
+            </div>
+            <div class="input-container-msg">
+                <input type="text" id="user-message" placeholder="Type your message...">
+                <button type="submit" id="send-button">Send</button>
+            </div>
+            <div class="input-container-room">
+                <input type="text" id="room-name" placeholder="Type a room name...">
+                <button type="submit" id="join-button">Join</button>
+            </div>
+            <div class="submit-container">
+                <button type="submit" id="submit-button" onclick="submitMessage()">Submit</button>
+            </div>
+        </div>
+    <!-- </form> -->
+    <!-- <script defer src="./../../script.js"></script> -->
+</body>
+</html>
